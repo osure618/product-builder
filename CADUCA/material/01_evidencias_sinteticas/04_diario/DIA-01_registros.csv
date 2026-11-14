@@ -1,0 +1,31 @@
+﻿hogar_id,participante_id,fecha_compra_o_preparacion,alimento,tipo_fecha,fecha_impresa_o_preparacion,fecha_resultado_o_corte,estado,motivo_reportado,nota_de_contexto
+H01,P01,2026-10-31,espinacas,sin_etiqueta,,2026-11-04,descartado,deterioro_visible,cajón; comprado para ensalada; cambió el plan
+H01,P01,2026-11-01,yogures,consumo_preferente,2026-11-09,2026-11-07,consumido,uso_habitual,revisó antes de fin de semana
+H01,P01,2026-11-02,queso fresco,caducidad,2026-11-07,2026-11-07,descartado,fecha_superada_o_limite,no se planificó consumo; se retiró sin consumir
+H01,P01,2026-11-03,tomates,sin_etiqueta,,2026-11-08,consumido,uso_habitual,visibles en la balda
+H01,P01,2026-11-05,jamón cocido,caducidad,2026-11-11,2026-11-10,consumido,recordado_a_tiempo,el envase estaba delante
+H01,P01,2026-11-06,lechuga,sin_etiqueta,,2026-11-11,descartado,deterioro_visible,oculta tras otros productos
+H01,P01,2026-11-07,leche,caducidad,2026-11-15,2026-11-12,consumido,uso_habitual,compra recurrente
+H01,P01,2026-11-08,yogur natural,consumo_preferente,2026-11-19,2026-11-14,pendiente,no_aplica,sin resolución en la fecha de corte
+H01,P01,2026-11-09,zanahorias,sin_etiqueta,,2026-11-12,consumido,uso_habitual,entraron en una sopa
+H01,P01,2026-11-10,hummus,caducidad,2026-11-18,2026-11-14,pendiente,no_aplica,envase aún sin abrir
+H02,P04,2026-10-30,verdura para crema,sin_etiqueta,,2026-11-03,descartado,compra_excesiva,se compró más cantidad de la que cocinaron
+H02,P04,2026-11-01,pasta cocinada,fecha_preparacion,2026-11-01,2026-11-03,consumido,uso_habitual,etiquetado como fecha de preparación; no es caducidad
+H02,P04,2026-11-02,salsa de tomate abierta,sin_etiqueta,,2026-11-08,descartado,apertura_desconocida,nadie recordó cuándo se abrió
+H02,P04,2026-11-03,yogures,consumo_preferente,2026-11-14,2026-11-12,consumido,uso_habitual,se compró paquete duplicado
+H02,P04,2026-11-04,ensalada preparada,caducidad,2026-11-06,2026-11-06,descartado,cambio_de_planes,no se consumió; se retiró el último día
+H02,P04,2026-11-05,queso curado,consumo_preferente,2026-12-03,2026-11-10,consumido,uso_habitual,estaba visible
+H02,P04,2026-11-06,pimientos,sin_etiqueta,,2026-11-13,descartado,deterioro_visible,al fondo del cajón
+H02,P04,2026-11-07,leche,caducidad,2026-11-16,2026-11-13,consumido,uso_habitual,uno de dos envases comprados
+H02,P04,2026-11-09,calabacín,sin_etiqueta,,2026-11-14,pendiente,no_aplica,sin observación del resultado
+H02,P04,2026-11-10,huevos,consumo_preferente,2026-11-24,2026-11-14,pendiente,no_aplica,sin observación del resultado
+H03,P07,2026-10-31,crema casera,fecha_preparacion,2026-10-31,2026-11-02,consumido,señal_visual,etiqueta y caja de comer primero
+H03,P07,2026-11-01,queso fresco,caducidad,2026-11-06,2026-11-05,consumido,señal_visual,pasó a la balda de comer primero
+H03,P07,2026-11-02,espinacas,sin_etiqueta,,2026-11-06,consumido,señal_visual,colocadas delante
+H03,P07,2026-11-03,yogur,consumo_preferente,2026-11-10,2026-11-07,consumido,uso_habitual,uso para desayuno
+H03,P07,2026-11-04,pasta cocinada,fecha_preparacion,2026-11-04,2026-11-06,consumido,etiqueta_manual,"fecha indica elaboración, no caducidad"
+H03,P07,2026-11-05,verduras asadas,fecha_preparacion,2026-11-05,2026-11-07,consumido,etiqueta_manual,preparadas por lotes
+H03,P07,2026-11-06,jamón cocido,caducidad,2026-11-11,2026-11-10,consumido,señal_visual,se consumió antes de la fecha
+H03,P07,2026-11-07,espinacas,sin_etiqueta,,2026-11-13,descartado,deterioro_visible,despiste al salir de viaje
+H03,P07,2026-11-08,leche,caducidad,2026-11-19,2026-11-14,pendiente,no_aplica,pendiente en corte de datos
+H03,P07,2026-11-09,crema casera,fecha_preparacion,2026-11-09,2026-11-11,consumido,señal_visual,consumo de preparación reciente
