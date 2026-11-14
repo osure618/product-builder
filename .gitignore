@@ -1,0 +1,13 @@
+# Sistema
+.DS_Store
+Thumbs.db
+
+# Secretos: nunca en el repositorio
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Auditorías de seguridad locales
+.security-audit/
