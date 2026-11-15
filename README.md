@@ -4,8 +4,8 @@ Tres plugins de skills para Claude que llevan un producto digital desde el mater
 
 | Plugin | Versión | Para qué sirve |
 | --- | --- | --- |
-| `product-builder` | 0.4 | **Definir.** Escribe los documentos de producto en `docs/`: evidencias, problema, benchmark, MVP, diseño, fichas de feature, modelo de datos y encargo para Lovable. |
-| `product-setup` | 0.2 | **Montar.** Supabase de desarrollo y de producción, Lovable en la rama `develop`, Vercel y la GitHub Action de migraciones. |
+| `product-builder` | 0.5 | **Definir.** Escribe los documentos de producto en `docs/`: evidencias, problema, benchmark, MVP, diseño, fichas de feature, modelo de datos y encargo para Lovable. |
+| `product-setup` | 0.3 | **Montar.** Supabase de desarrollo y de producción, Lovable en la rama `develop`, Vercel y la GitHub Action de migraciones. |
 | `product-quality` | 0.1 | **Verificar.** Datos de prueba, pruebas con Playwright, revisión de seguridad, informe-puerta, corrección y pull request a `main`. |
 
 ## Instalación
@@ -106,6 +106,13 @@ flowchart TD
 | informe-verificacion | «¿Está lista F03?» | Veredicto VERDE o ROJO con evidencias | Aprobar |
 | encargo-correccion | «Prepara la corrección» | Encargo de arreglo a Lovable, enviado con tu «adelante» | Aprobar el envío |
 | promover-a-main | «Pasa a producción» | Pull request de `develop` a `main` con informes | Hacer el merge |
+
+## Caso práctico y prompt maestro
+
+- `caduca-material-del-caso.zip` (v1.3): caso CADUCA para practicar el flujo completo. Al descomprimirlo, la carpeta `CADUCA/` trae `PROYECTO.md`, la plantilla `[template]-PROYECTO.md`, el material de partida en `material/` y `docs/` vacío.
+- `PROMPT_MAESTRO.md` (v1.1): instrucciones para el Proyecto de Claude, válidas para cualquier proyecto. Se copian en las instrucciones del Proyecto; no se dejan en la carpeta vinculada. Lo propio de cada proyecto va en `PROYECTO.md`, que indica dónde está el material de partida.
+
+Para trabajar el caso, vincula al Proyecto una carpeta con `PROYECTO.md`, `material/` y `docs/`, y empieza con «Analiza el material».
 
 ## Requisitos
 - Cuentas: Claude, Lovable, Supabase (dos proyectos: el plan gratuito permite dos activos), GitHub y Vercel. PostHog opcional.
