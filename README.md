@@ -4,8 +4,8 @@ Tres plugins de skills para Claude que llevan un producto digital desde el mater
 
 | Plugin | Versión | Para qué sirve |
 | --- | --- | --- |
-| `product-builder` | 0.4 | **Definir.** Escribe los documentos de producto en `docs/`: evidencias, problema, benchmark, MVP, diseño, fichas de feature, modelo de datos y encargo para Lovable. |
-| `product-setup` | 0.2 | **Montar.** Supabase de desarrollo y de producción, Lovable en la rama `develop`, Vercel y la GitHub Action de migraciones. |
+| `product-builder` | 0.5 | **Definir.** Escribe los documentos de producto en `docs/`: evidencias, problema, benchmark, MVP, diseño, fichas de feature, modelo de datos y encargo para Lovable. |
+| `product-setup` | 0.3 | **Montar.** Supabase de desarrollo y de producción, Lovable en la rama `develop`, Vercel y la GitHub Action de migraciones. |
 | `product-quality` | 0.1 | **Verificar.** Datos de prueba, pruebas con Playwright, revisión de seguridad, informe-puerta, corrección y pull request a `main`. |
 
 ## Instalación
