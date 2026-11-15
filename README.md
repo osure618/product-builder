@@ -107,6 +107,13 @@ flowchart TD
 | encargo-correccion | «Prepara la corrección» | Encargo de arreglo a Lovable, enviado con tu «adelante» | Aprobar el envío |
 | promover-a-main | «Pasa a producción» | Pull request de `develop` a `main` con informes | Hacer el merge |
 
+## Caso práctico y prompt maestro
+
+- `caduca-material-del-caso.zip` (v1.3): caso CADUCA para practicar el flujo completo. Al descomprimirlo, la carpeta `CADUCA/` trae `PROYECTO.md`, la plantilla `[template]-PROYECTO.md`, el material de partida en `material/` y `docs/` vacío.
+- `PROMPT_MAESTRO.md` (v1.1): instrucciones para el Proyecto de Claude, válidas para cualquier proyecto. Se copian en las instrucciones del Proyecto; no se dejan en la carpeta vinculada. Lo propio de cada proyecto va en `PROYECTO.md`, que indica dónde está el material de partida.
+
+Para trabajar el caso, vincula al Proyecto una carpeta con `PROYECTO.md`, `material/` y `docs/`, y empieza con «Analiza el material».
+
 ## Requisitos
 - Cuentas: Claude, Lovable, Supabase (dos proyectos: el plan gratuito permite dos activos), GitHub y Vercel. PostHog opcional.
 - Conectores de Claude: Supabase, GitHub, Vercel y Lovable.
