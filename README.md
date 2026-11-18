@@ -5,8 +5,8 @@ Tres plugins de skills para Claude que llevan un producto digital desde el mater
 | Plugin | Versión | Para qué sirve |
 | --- | --- | --- |
 | `product-builder` | 0.5 | **Definir.** Escribe los documentos de producto en `docs/`: evidencias, problema, benchmark, MVP, diseño, fichas de feature, modelo de datos y encargo para Lovable. |
-| `product-setup` | 0.3 | **Montar.** Supabase de desarrollo y de producción, Lovable en la rama `develop`, Vercel y la GitHub Action de migraciones. |
-| `product-quality` | 0.1 | **Verificar.** Datos de prueba, pruebas con Playwright, revisión de seguridad, informe-puerta, corrección y pull request a `main`. |
+| `product-setup` | 0.4 | **Montar.** Supabase de desarrollo y de producción, Lovable en la rama `develop`, Vercel y la GitHub Action de migraciones. |
+| `product-quality` | 0.2 | **Verificar.** Datos de prueba, pruebas con Playwright, revisión de seguridad, informe-puerta, corrección y pull request a `main`. |
 
 ## Instalación
 1. Descarga los archivos `.plugin` de este repositorio.
@@ -115,8 +115,9 @@ flowchart TD
 Para trabajar el caso, vincula al Proyecto una carpeta con `PROYECTO.md`, `material/` y `docs/`, y empieza con «Analiza el material».
 
 ## Requisitos
-- Cuentas: Claude, Lovable, Supabase (dos proyectos: el plan gratuito permite dos activos), GitHub y Vercel. PostHog opcional.
-- Conectores de Claude: Supabase, GitHub, Vercel y Lovable.
+- Cuentas: Claude, Lovable, Supabase (dos proyectos: el plan gratuito permite dos activos por persona, sumando todas sus organizaciones; los pausados no cuentan), GitHub y Vercel. PostHog opcional.
+- Conectores de Claude: Supabase, GitHub, Vercel y Lovable. **Conecta GitHub y Vercel con permiso de escritura**: con solo lectura las skills fallan a mitad (403).
+- En GitHub, autoriza la app de Vercel con acceso a los repositorios que cree Lovable (o a todos).
 - Para `product-quality`, Node.js y una de estas dos opciones:
   - **Modo exploratorio (para aprender):** el MCP de Playwright en Claude Desktop o Claude Code. Claude prueba en un navegador que ves en directo. Es más visual, pero no deja tests repetibles.
   - **Modo repo (para un proyecto real):** Claude Code con Playwright en el proyecto (`npm i -D @playwright/test` y `npx playwright install chromium`). Deja un test por criterio en `tests/e2e/` que se repite en cada corrección. Es la configuración precisa y la recomendada antes de pasar a producción.
@@ -124,7 +125,7 @@ Para trabajar el caso, vincula al Proyecto una carpeta con `PROYECTO.md`, `mater
 
 ## Dónde vive cada cosa
 - **En el repositorio del producto:** `docs/`, `AGENTS.md`, `supabase/migrations/`, `tests/`, `playwright.config.ts`, el workflow de migraciones y `.env.example` solo con nombres.
-- **Nunca en el repositorio:** `.env.test.local` (contraseñas de prueba y bypass de Vercel, en local), los secretos de GitHub (token de Supabase y contraseña de producción) y `.security-audit/`.
+- **Nunca en el repositorio:** `.env.test.local` (contraseñas de prueba y bypass de Vercel, en local), los secretos de GitHub (`SUPABASE_PROD_DB_URL` con la contraseña de producción y `SUPABASE_PROD_PROJECT_REF`) y `.security-audit/`.
 
 ## Aviso
 Es una primera versión pensada para aprender el proceso. Un producto real necesita más iteración, revisión humana del código y una auditoría de seguridad completa antes de manejar datos reales.
