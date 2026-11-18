@@ -107,6 +107,16 @@ flowchart TD
 | encargo-correccion | «Prepara la corrección» | Encargo de arreglo a Lovable, enviado con tu «adelante» | Aprobar el envío |
 | promover-a-main | «Pasa a producción» | Pull request de `develop` a `main` con informes | Hacer el merge |
 
+## Guías en PDF
+Todas están en la carpeta [`guias/`](guias/), en el orden en que conviene leerlas:
+
+| Guía | Para qué sirve |
+| --- | --- |
+| [Guía de preparación](<guias/De idea a producto digital · Guía de preparación.pdf>) | Antes de la sesión: herramientas, cuentas, plugins, conectores y Playwright. |
+| [Guía de configuración](<guias/De idea a producto digital · Guía de configuración.pdf>) | Cómo conectar Claude, Lovable, GitHub, Supabase y Vercel entre sí: secretos, variables por entorno, Action de migraciones y errores típicos. Léela antes de montar el entorno (F00). |
+| [Guía de seguimiento](<guias/De idea a producto digital · Guía de seguimiento.pdf>) | El recorrido paso a paso del caso CADUCA: qué pedir, aceptar y revisar en cada paso. |
+| [Product Brain](<guias/Product Brain · Arquitectura de documentos y skills.pdf>) | La arquitectura de documentos de `docs/` y las skills, en orden de ejecución. |
+
 ## Caso práctico y prompt maestro
 
 - `caduca-material-del-caso.zip` (v1.3.1): caso CADUCA para practicar el flujo completo. Al descomprimirlo, la carpeta `CADUCA/` trae `PROYECTO.md`, la plantilla `[template]-PROYECTO.md`, el material de partida en `material/` y `docs/` vacío.
