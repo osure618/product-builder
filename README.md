@@ -113,7 +113,7 @@ Todas están en la carpeta [`guias/`](guias/), en el orden en que conviene leerl
 | Guía | Para qué sirve |
 | --- | --- |
 | [Guía de preparación](<guias/De idea a producto digital · Guía de preparación.pdf>) | Antes de la sesión: herramientas, cuentas, plugins, conectores y Playwright. |
-| [Guía de configuración](<guias/De idea a producto digital · Guía de configuración.pdf>) | Cómo conectar Claude, Lovable, GitHub, Supabase y Vercel entre sí: secretos, variables por entorno, Action de migraciones y errores típicos. Léela antes de montar el entorno (F00). |
+| [Guía de conexiones](<guias/De idea a producto digital · Guía de conexiones.pdf>) | Cómo conectar Claude, Lovable, GitHub, Supabase y Vercel entre sí: secretos, variables por entorno, Action de migraciones y errores típicos. Léela antes de montar el entorno (F00). |
 | [Guía de seguimiento](<guias/De idea a producto digital · Guía de seguimiento.pdf>) | El recorrido paso a paso del caso CADUCA: qué pedir, aceptar y revisar en cada paso. |
 | [Product Brain](<guias/Product Brain · Arquitectura de documentos y skills.pdf>) | La arquitectura de documentos de `docs/` y las skills, en orden de ejecución. |
 
